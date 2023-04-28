@@ -1,4 +1,5 @@
 # [runz.](https://sparkling-fudge-c32123.netlify.app/)
+(제목을 클릭하면 사이트로 이동)
 
 ### 운동복 쇼핑몰 홈페이지 개인프로젝트
 
