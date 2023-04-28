@@ -242,7 +242,7 @@ export default function useCart() {
 
 <br>
 
-## **6. map을 이용한 상품리스트 활용**
+## **6. map함수 사용**
 
 ```js
 <ul className="grid grid-cols-1 md:grid-cols-3 lg-grid-cols-4 gap-4 p-4">
