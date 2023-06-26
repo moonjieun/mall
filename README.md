@@ -65,7 +65,7 @@ export function onUserStateChange(callback) {
 
 <br>
 
-## **2. 로그인시 어드민권한 확인 (async await)**
+## **2. 로그인시 어드민권한 확인 **
 
 - _어드민 사용자 경로보호_ index.js `<ProtectedRoute/>`사용하여
   ProtectedRoute.jsx Component에서 조건을 체크한뒤 route를이용해 새상품등록페이지로 이동할 수 있게함.( 로그인한 사용자확인, 어드민권한체크 )
