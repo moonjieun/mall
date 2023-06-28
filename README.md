@@ -263,7 +263,7 @@ export async function uploadImage(file) {
   const data = new FormData();
 
   data.append("file", file);
-  //secret key => .env 파일에서 받아옴
+  //secret key => .env
   data.append("upload_preset", process.env.REACT_APP_CLOUDINARY_PRESET);
   return fetch(process.env.REACT_APP_CLOUDINARY_URL, {
     method: "POST",
