@@ -72,7 +72,7 @@ export function onUserStateChange(callback) {
 
 ## 실행화면
 
-<img width="80%" src="https://user-images.githubusercontent.com/102341066/234918210-b60b230c-aa98-47d0-b60f-fd59b1fb723c.gif"/>
+<img width="80%" src="https://github.com/moonjieun/mall/assets/102341066/7add2b39-ef11-4720-9c38-b2942870577d"/>
 <details>
 <summary>💬코드보기</summary>
 
