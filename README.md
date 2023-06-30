@@ -203,7 +203,7 @@ const {
 
 ## 개선 후 실행화면
 
-<img width="80%" src="https://github.com/moonjieun/mall/assets/102341066/8d01abb8-0120-489f-b218-c52566e32efd"/>
+<img width="80%" src="https://github.com/moonjieun/mall/assets/102341066/c7f66947-5ac6-4c1a-8da7-f6f9533f98a5"/>
 
 cart custom hook 코드
 
