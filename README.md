@@ -72,7 +72,7 @@ export function onUserStateChange(callback) {
 
 ## 실행화면
 
-<img width="80%" src="https://github.com/moonjieun/mall/assets/102341066/7add2b39-ef11-4720-9c38-b2942870577d"/>
+<img width="65%" src="https://github.com/moonjieun/mall/assets/102341066/7add2b39-ef11-4720-9c38-b2942870577d"/>
 <details>
 <summary>💬코드보기</summary>
 
@@ -203,7 +203,7 @@ const {
 
 ## 개선 후 실행화면
 
-<img width="80%" src="https://github.com/moonjieun/mall/assets/102341066/c7f66947-5ac6-4c1a-8da7-f6f9533f98a5"/>
+<img width="65%" src="https://github.com/moonjieun/mall/assets/102341066/c7f66947-5ac6-4c1a-8da7-f6f9533f98a5"/>
 
 cart custom hook 코드
 
