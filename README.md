@@ -170,7 +170,7 @@ export async function addNewProduct(product, url) {
 ## **4. `useMutation`, `custom hook`의 사용**
 
 <br>
-📝**(수정전)** 데이터 가져오기
+📝 **(수정전)** 데이터 가져오기
 
 ```js
 const {
