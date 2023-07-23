@@ -1,7 +1,7 @@
-# [runz.](https://sparkling-fudge-c32123.netlify.app/)
-(제목을 클릭하면 사이트로 이동)
+# [runz.](https://sparkling-fudge-c32123.netlify.app/) (클릭하면 사이트로 이동)
 
-### 운동복 쇼핑몰 홈페이지 개인프로젝트
+
+### 운동복 쇼핑몰 홈페이지 (개인프로젝트)
 
 <br>
 <br>
@@ -27,7 +27,7 @@
 - Home
 - Product Detail Page
 - My Cart
-- New Product ( admin권한이 있는 사용자만 보이는 페이지 )
+- New Product ( admin권한이 있는 사용자만 보이는 페이지 ) 관리자만 새상품 등록
 - Login, Logout ( 구글계정 로그인 )
   <br>
   <br>
