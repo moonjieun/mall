@@ -170,7 +170,7 @@ export async function addNewProduct(product, url) {
 ## **4. `useMutation`, `custom hook`의 사용**
 
 <br>
-📝 수정전 데이터 가져오기
+📝 데이터 가져오기 (수정전)
 
 ```js
 const {
@@ -182,7 +182,7 @@ const {
 
 <br>
 
-- `custom hook` 사용 후 코드리팩토링
+- (수정후) `custom hook` 사용 후 코드리팩토링 ✨
 
 ```js
 const {
@@ -201,7 +201,7 @@ const {
 **custom hook에서 함수를 받아와** `mutate(정보)`를 이용해 전달 -> 서버에서 데이터를 재호출해 최신상태로 업데이트
 <br>
 
-## 개선 후 실행화면
+## 💡 개선 후 실행화면
 
 <img width="65%" src="https://github.com/moonjieun/mall/assets/102341066/c7f66947-5ac6-4c1a-8da7-f6f9533f98a5"/>
 
