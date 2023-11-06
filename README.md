@@ -8,8 +8,6 @@
 
 # 📝프로젝트 정보
 
-<br>
-
 ### 💡 개발기간
 
 - 2023.03.29 ~ 2023.04.27
@@ -71,7 +69,6 @@ export function onUserStateChange(callback) {
   ProtectedRoute.jsx Component에서 조건을 체크한뒤 route를이용해 새상품등록페이지로 이동할 수 있게함.( 로그인한 사용자확인, 어드민권한체크 )
 
 ## 실행화면
-
 <img width="65%" src="https://github.com/moonjieun/mall/assets/102341066/7add2b39-ef11-4720-9c38-b2942870577d"/>
 <details>
 <summary>💬코드보기</summary>
