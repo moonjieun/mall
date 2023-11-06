@@ -202,7 +202,7 @@ const {
 ## 💡 개선 후 실행화면
 <img width="65%" src="https://github.com/moonjieun/mall/assets/102341066/c7f66947-5ac6-4c1a-8da7-f6f9533f98a5"/>
 <br/>
-cart custom hook 코드
+**cart custom hook 코드**
 <details>
 <summary>💬자세히보기</summary>
 
