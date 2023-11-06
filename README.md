@@ -70,7 +70,6 @@ export function onUserStateChange(callback) {
 
 ## 실행화면
 <img width="65%" src="https://github.com/moonjieun/mall/assets/102341066/7add2b39-ef11-4720-9c38-b2942870577d"/>
-<details>
 <summary>💬코드보기</summary>
 
 ```js
