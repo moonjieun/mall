@@ -41,7 +41,7 @@ Navbar에서 `useState`등록 | `useEffect`을 통해 user정보를 Component에
 - 수정
   <br>
   Context Api 이용해 user를 등록
-  Navbar에서 `useAuthContext`로 <AuthContext.Provider/>로 감싼 컴포넌트에서 데이터를 받을 수 있도록 설정
+  Navbar에서 `useAuthContext`로 <AuthContext.Provider/>로 감싼 컴포넌트에서 데이터를 받을 수 있도록 설정 하였고,
   리로딩시에도 유저정보 보관
 
 <details>
@@ -66,7 +66,7 @@ export function onUserStateChange(callback) {
 ## **2. 로그인시 어드민권한 확인**
 
 - _어드민 사용자 경로보호_ index.js `<ProtectedRoute/>`사용하여
-  ProtectedRoute.jsx Component에서 조건을 체크한뒤 route를이용해 새상품등록페이지로 이동할 수 있게함.( 로그인한 사용자확인, 어드민권한체크 )
+  ProtectedRoute.jsx Component에서 조건을 체크한뒤 route를이용해 새상품등록페이지로 이동할 수 있게하였습니다.( 로그인한 사용자확인, 어드민권한체크 )
 
 ## 실행화면
 <img width="65%" src="https://github.com/moonjieun/mall/assets/102341066/7add2b39-ef11-4720-9c38-b2942870577d"/>
@@ -96,7 +96,7 @@ async function adminUser(user) {
 ## **3. 새상품 등록**
 
 관리자권한을 가진 유저가 새상품등록페이지에서 상품을 등록할시
-input에 입력한 정보가 `change`, `submit`되었을때 정보를 전달 보관후 firebase에 담는다.
+input에 입력한 정보가 `change`, `submit`되었을때 정보를 전달 보관후 firebase에 담았습니다.
 
 <details>
 <summary>💬 상품등록페이지 코드보기</summary>
@@ -188,7 +188,7 @@ const {
 } = useProducts();
 ```
 
-`reactQuery` 유지보수 용이, UI/business 로직 분리하기 위해 `custom hook`을 이용해 요청/ 업데이트를 한곳에서 관리하게 수정
+`reactQuery` 유지보수 용이, UI/business 로직 분리하기 위해 `custom hook`을 이용해 요청/ 업데이트를 한곳에서 관리하게 수정하였습니다.
 
 <br>
 
@@ -272,6 +272,6 @@ export async function uploadImage(file) {
 }
 ```
 
-- 여기서 이미지URL을 받아와 firbase에 파일형태 X => url형태로 추가
+- 여기서 이미지URL을 받아와 firbase에 파일형태 X => url형태로 추가하였습니다.
 
 <br>
