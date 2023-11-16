@@ -38,7 +38,7 @@
 <br>
 Navbar에서 `useState`등록 | `useEffect`을 통해 user정보를 Component에 등록하였더니, 페이지 리로딩시 정보 초기화 유저정보를 가지고있지 못하는 오류가 발생하였습니다.
 
-- 수정
+- 수정 내용
   <br>
   Context Api 이용해 user를 등록
   Navbar에서 `useAuthContext`로 <AuthContext.Provider/>로 감싼 컴포넌트에서 데이터를 받을 수 있도록 설정 하였고,
