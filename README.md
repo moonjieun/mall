@@ -36,7 +36,7 @@
 
 ❗ 오류 사항
 <br>
-Navbar에서 `useState`등록 | `useEffect`을 통해 user정보를 Component에 등록하였더니, 페이지 리로딩시 정보 초기화 유저정보를 가지고있지 못함.
+Navbar에서 `useState`등록 | `useEffect`을 통해 user정보를 Component에 등록하였더니, 페이지 리로딩시 정보 초기화 유저정보를 가지고있지 못하는 오류가 발생하였습니다.
 
 - 수정
   <br>
