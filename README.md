@@ -68,7 +68,7 @@ export function onUserStateChange(callback) {
 - _어드민 사용자 경로보호_ index.js `<ProtectedRoute/>`사용하여
   ProtectedRoute.jsx Component에서 조건을 체크한뒤 route를이용해 새상품등록페이지로 이동할 수 있게하였습니다.( 로그인한 사용자확인, 어드민권한체크 )
 
-<summary>>💬코드보기</summary>
+<summary>💬코드보기</summary>
 
 ```js
 import React from 'react';
