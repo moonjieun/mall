@@ -67,7 +67,30 @@ export function onUserStateChange(callback) {
 
 - _어드민 사용자 경로보호_ index.js `<ProtectedRoute/>`사용하여
   ProtectedRoute.jsx Component에서 조건을 체크한뒤 route를이용해 새상품등록페이지로 이동할 수 있게하였습니다.( 로그인한 사용자확인, 어드민권한체크 )
+<summary>>💬코드보기</summary>
+```js
+import React from 'react';
+import { useAuthContext } from '../context/AuthContext';
+import { Navigate } from 'react-router-dom';
 
+export default function ProtectedRoute({children, requireAdmin}){
+    const { user } = useAuthContext();
+   console.log(user,'나 라우터페이지임 유저정보 뜨는지 좀')
+   if(user===undefined){
+    return <>로딩중</>;
+ } else if (user === null || (requireAdmin && user.isAdmin===false)) {
+    return <Navigate to={"/"} replace={true} />;
+ } else {
+    return children;
+ }
+}
+
+//로그인한 사용자가 있는지확인
+//사용자가 어드민 권한이 있는지 확인
+//requireAdmin이 true인 경우에는 로그인도 되어있어야하고, 어드민 권한도 가지고 있어야함\
+//조건이 불충족할경우 / 상위 경로로 이동
+//조건이 충족된경우 전달된 chidren을 보여줌
+```
 ## 실행화면
 <img width="65%" src="https://github.com/moonjieun/mall/assets/102341066/7add2b39-ef11-4720-9c38-b2942870577d"/>
 
