@@ -93,79 +93,7 @@ async function adminUser(user) {
 </details>
 <br>
 
-## **3. 새상품 등록**
-
-관리자권한을 가진 유저가 새상품등록페이지에서 상품을 등록할시
-input에 입력한 정보가 `change`, `submit`되었을때 정보를 전달 보관후 firebase에 담았습니다.
-
-<details>
-<summary>💬 상품등록페이지 코드보기</summary>
-
-`NewProduct.jsx`
-
-```js
-const [product, setProduct] = useState({});
-const [file, setFile] = useState();
-const [isUploading, setIsUploading] = useState(false);
-const [success, setSuccess] = useState();
-
-const { addProduct } = useProducts();
-
-const handleChange = (e) => {
-  const { name, value, files } = e.target;
-  if (name === "file") {
-    setFile(files && files[0]);
-    return;
-  }
-  setProduct((product) => ({ ...product, [name]: value }));
-};
-
-const handleSubmit = (e) => {
-  e.preventDefault();
-  setIsUploading(true);
-  uploadImage(file) //
-    .then((url) => {
-      addProduct.mutate(
-        { product, url },
-        {
-          onSuccess: () => {
-            setSuccess("성공적으로 제품이 등록되었습니다.");
-            setTimeout(() => {
-              setSuccess(null);
-            }, 4000);
-          },
-        }
-      );
-    })
-    .finally(() => setIsUploading(false));
-};
-```
-
-</details>
-
-<details>
-<summary>💬 firebase에 추가 코드보기</summary>
-
-`firebase.js`
-
-```js
-/**firebase db/products에 상품등록 */
-export async function addNewProduct(product, url) {
-  const id = uuid();
-
-  return set(ref(database, `products/${id}`), {
-    ...product,
-    id,
-    price: parseInt(product.price),
-    image: url,
-  });
-}
-```
-
-</details>
-<br>
-
-## **4.  `custom hook`, `useMutation`의 사용**
+## **3.  `custom hook`, `useMutation`의 사용**
 
 <br>
 📝 (수정전) 데이터 가져오기
@@ -192,7 +120,7 @@ const {
 
 <br>
 
-## **5. 장바구니 뱃지 표시지연 수정**
+## **4. 장바구니 뱃지 표시지연 수정**
 
 ### 📑 개선사항<br>
 장바구니에 담긴 개수를 바로 확인하지 못하였으나, firebase파일함수를 **component에서 사용하지않고**
@@ -241,7 +169,7 @@ export default function useCart() {
 
 <br>
 
-## **6. map함수 사용**
+## **5. map함수 사용**
 
 ```js
 <ul className="grid grid-cols-1 md:grid-cols-3 lg-grid-cols-4 gap-4 p-4">
@@ -254,7 +182,7 @@ export default function useCart() {
 
 <br>
 
-## **7. cloudinary에서 REST API를 이용해 이미지 업로드**
+## **6. cloudinary에서 REST API를 이용해 이미지 업로드**
 
 ```js
 export async function uploadImage(file) {
