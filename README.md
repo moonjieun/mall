@@ -102,10 +102,10 @@ export default function ProtectedRoute({children, requireAdmin}){
 <img width="65%" src="https://github.com/moonjieun/mall/assets/102341066/7add2b39-ef11-4720-9c38-b2942870577d"/>
 
 <details>
-<summary>💬코드보기</summary>
+<summary>💬상품관리 권한 코드보기</summary>
 
 ```js
-/**상품관리권한 체크  */
+/**상품관리 권한  체크  */
 //firebase/admins에 미리 권한을줄 uid를 등록
 async function adminUser(user) {
   return get(ref(database, "admins")).then((snapshot) => {
