@@ -199,20 +199,8 @@ export default function useCart() {
 
 <br>
 
-## **5. map함수 사용**
 
-```js
-<ul className="grid grid-cols-1 md:grid-cols-3 lg-grid-cols-4 gap-4 p-4">
-  {products &&
-    products.map((product) => (
-      <ProductCard key={product.id} product={product} />
-    ))}
-</ul>
-```
-
-<br>
-
-## **6. cloudinary에서 REST API를 이용해 이미지 업로드**
+## **5. cloudinary에서 REST API를 이용해 이미지 업로드**
 
 ```js
 export async function uploadImage(file) {
